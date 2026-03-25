@@ -492,7 +492,6 @@ def tab_batch(bundles, loaded_names):
         '<div class="conv-notice">'
         '&#8505; CSV must have <b>{}</b> columns in this order: <code>{}</code>. '
         'The first row may be a header. '
-        '<b>fc</b> and <b>fy</b> should be in <b>ksi</b> — conversion is applied automatically.'
         '</div>'.format(N_FEATURES, ", ".join(FEATURE_NAMES)),
         unsafe_allow_html=True)
 
@@ -506,7 +505,7 @@ def tab_batch(bundles, loaded_names):
         template_io = io.StringIO()
         writer = csv.writer(template_io)
         writer.writerow(FEATURE_NAMES)
-        writer.writerow([4.0, 60.0, 10.0, 5.0, 5.0, 3.0, 5.0, 180.0])
+        writer.writerow([25.0, 460.0, 10.0, 15.0, 25.0, 3.0, 5.0, 0.14])
         st.download_button(
             "⬇  Download template CSV",
             data=template_io.getvalue().encode(),
