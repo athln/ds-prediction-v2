@@ -1,0 +1,33 @@
+# ─────────────────────────────────────────────────────────────
+# ANN Multi-Model Predictor — Python Dependencies
+# ─────────────────────────────────────────────────────────────
+# Install all dependencies:
+#     pip install -r requirements.txt
+#
+# For CPU-only environments (no NVIDIA GPU), install PyTorch with:
+#     pip install torch --index-url https://download.pytorch.org/whl/cpu
+# before running the general install above.
+# ─────────────────────────────────────────────────────────────
+
+# ── Web application ───────────────────────────────────────────
+streamlit>=1.32.0
+
+# ── Deep learning ─────────────────────────────────────────────
+# CPU build — replace with the GPU wheel if CUDA is available:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu118
+torch>=2.0.0
+
+# ── Machine learning & preprocessing ─────────────────────────
+scikit-learn>=1.3.0
+
+# ── Numerical computing ───────────────────────────────────────
+numpy>=1.24.0
+
+# ── Data handling ─────────────────────────────────────────────
+pandas>=2.0.0
+
+# ── Plotting (used by ann_train.py) ───────────────────────────
+matplotlib>=3.7.0
+
+# ── Explainability (used by ann_train.py) ─────────────────────
+shap>=0.44.0
