@@ -509,7 +509,7 @@ def tab_batch(bundles, loaded_names):
         st.download_button(
             "⬇  Download template CSV",
             data=template_io.getvalue().encode(),
-            file_name="ann_input_template.csv",
+            file_name="ds_input_template.csv",
             mime="text/csv")
         return
 
